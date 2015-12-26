@@ -1,0 +1,46 @@
+---
+title: "index.Rmd"
+author: "mhbw"
+date: "December 25, 2015"
+output: ioslides_presentation
+---
+
+## R Markdown
+```Rmd
+##read-and-delete
+
+1. Edit YAML front Matter
+2. Write Using R Markdown
+3. Use an impty line followed by three dashes to separate slides
+
+--- .class #id
+
+##slide 2
+
+```
+
+- Whatever you put oafter `##` will be the title of the slide
+- `---` markes the end
+- `.class #id` are `CSS` attributes you can use to customize slides
+- whatever you put between `##` and `---` are up to you as long as it is valid R\ Markdown or HTML
+
+
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Code and Output
+
+```{r}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
